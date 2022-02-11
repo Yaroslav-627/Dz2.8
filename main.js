@@ -16,17 +16,14 @@ console.log(Arr1.concat(Arr2));
 
 // 3
 
-// hello = 'hello world';
-// letter2 = [];
-
-// for (letter1 of hello){
-//     letter2.push(letter1);
-//     if(letter2.indexOf(0) || letter2.indexOf(6)){
-//         letter2.indexOf(0).toUppercase();
-//         letter2.indexOf(6).toUppercase();
-//     }
-// }
-// console.log(letter2);
+hello = 'hello world';
+hello = hello.split(' ');
+let h1 = hello[0];
+let h2 = hello[1];
+let res1 = h1[0].toUpperCase() + h1.slice(1);
+let res2 = h2[0].toUpperCase() + h2.slice(1);
+let result = `${res1} ${res2}`;
+console.log(result);
 
 // 4
 
@@ -38,13 +35,14 @@ for (numbers3 of numbers) {
 }
 console.log(numbers3_result);
 
-// // 5
-// let str = "привет мир";
+// 5
+let str = "привет мир";
 
-// if (str = "привет мир"){
-//     console.log(str.length.toUpperCase());
-//     console.log(str.length2.toUpperCase());
-//     console.log(str.length4.toUpperCase());
-//     console.log(str.length7.toUpperCase());
-//     console.log(str.length9.toUpperCase());
-// }
+str = str.split('');
+str[0] = str[0].toUpperCase();
+str[2] = str[2].toUpperCase();
+str[4] = str[4].toUpperCase();
+str[7] = str[7].toUpperCase();
+str[9] = str[9].toUpperCase();
+str = str.join('');
+console.log(str);
